@@ -4,6 +4,7 @@ project (bmc-webserver CXX)
 
 cmake_policy (SET CMP0054 NEW)
 
+
 set (CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
 
 option (BUILD_STATIC_LIBS "Built static libraries" ON)
@@ -110,7 +111,7 @@ option (
     OFF
 )
 
-option (BMCWEB_INSECURE_DISABLE_XSS_PREVENTION "Disable XSS preventions" OFF)
+option (BMCWEB_INSECURE_DISABLE_XSS_PREVENTION "Disable XSS preventions" ON)
 
 option (
     BMCWEB_INSECURE_ENABLE_REDFISH_FW_TFTP_UPDATE
