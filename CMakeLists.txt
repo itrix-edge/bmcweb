@@ -98,11 +98,11 @@ option (
     BMCWEB_INSECURE_DISABLE_CSRF_PREVENTION
     "Disable CSRF prevention checks. Should be set to OFF for production
     systems."
-    OFF
+    ON
 )
 
 option (BMCWEB_INSECURE_DISABLE_SSL
-        "Disable SSL ports. Should be set to OFF for production systems." OFF)
+	"Disable SSL ports. Should be set to OFF for production systems." ON)
 
 option (
     BMCWEB_INSECURE_DISABLE_AUTHENTICATION
